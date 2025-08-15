@@ -1,0 +1,146 @@
+<!-- Paste this in Pages → New Page → HTML view -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cinematic YouTube Thumbnails by [Your Name]</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Montserrat&amp;display=swap" rel="stylesheet" />
+
+<style>
+body { margin:0; font-family:'Montserrat',sans-serif; background:#000; color:#fff; scroll-behavior:smooth; overflow-x:hidden;}
+a{text-decoration:none; color:inherit;}
+header{
+    background: #111 url('your-hero-image.jpg') center/cover no-repeat fixed;
+    height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; overflow:hidden; position:relative;
+}
+header h1{font-family:'Anton',sans-serif; font-size:3rem; color:#FFD600; margin:0.5rem 0; opacity:0; transform:translateY(-50px); animation:fadeInDown 1.5s forwards;}
+header p{font-size:1.5rem; margin-bottom:1rem; opacity:0; transform:translateY(50px); animation:fadeInUp 1.5s forwards 0.5s;}
+.cta-btn{background:#FFD600; color:#000; padding:0.8rem 2rem; font-weight:bold; border-radius:5px; margin-top:1rem; display:inline-block; transition:transform 0.3s, box-shadow 0.3s;}
+.cta-btn:hover{transform:scale(1.1) rotate(-2deg); box-shadow:0 0 30px #FFD600;}
+section{padding:4rem 2rem; max-width:1200px; margin:0 auto; opacity:0; transform:translateY(50px); transition:all 1s ease-out;}
+section.visible{opacity:1; transform:translateY(0);}
+section h2{font-family:'Anton',sans-serif; font-size:2.5rem; color:#FFD600; margin-bottom:2rem; text-align:center;}
+.portfolio-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1.5rem;}
+.portfolio-grid img{width:100%; border-radius:10px; transition:transform 0.4s,box-shadow 0.4s;}
+.portfolio-grid img:hover{transform:scale(1.08) rotate(-1deg); box-shadow:0 0 25px #FFD600;}
+.before-after{display:flex; flex-wrap:wrap; gap:2rem; justify-content:center;}
+.before-after img{width:45%; border-radius:10px; border:3px solid #FFD600; transition:transform 0.5s, box-shadow 0.5s;}
+.before-after img:hover{transform:scale(1.05); box-shadow:0 0 25px #FFD600;}
+.pricing-table{width:100%; border-collapse:collapse; text-align:center; margin-top:2rem;}
+.pricing-table th, .pricing-table td{padding:1rem; border:1px solid #FFD600; transition:transform 0.3s, box-shadow 0.3s;}
+.pricing-table th{background:#FFD600; color:#000;}
+.pricing-table tr:hover td{transform:scale(1.02); box-shadow:0 0 20px #FFD600;}
+.pricing-table tr.pro-plan td{background:#FFD600; color:#000; font-weight:bold;}
+.pricing-table td::before{content:"✓"; color:#FFD600; margin-right:5px;}
+.testimonial{background:#111; padding:2rem; border-left:5px solid #FFD600; margin:1rem 0; font-style:italic; opacity:0; transform:translateX(-50px); transition:all 1s ease-out; position:relative;}
+.testimonial.visible{opacity:1; transform:translateX(0);}
+.testimonial .stars{color:#FFD600; font-size:1.2rem; position:absolute; top:10px; right:10px; opacity:0; animation:fadeStars 1s forwards;}
+footer{background:#111; padding:2rem; text-align:center;}
+@keyframes fadeInDown{to{opacity:1; transform:translateY(0);}}
+@keyframes fadeInUp{to{opacity:1; transform:translateY(0);}}
+@keyframes fadeStars{to{opacity:1;}}
+@media(max-width:768px){.before-after img{width:100%;}}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Cinematic YouTube Thumbnails</h1>
+    <p>By [Your Name]</p>
+    <a class="cta-btn" href="https://wa.me/YourNumberHere?text=Hello&amp;I%20want%20a%20thumbnail">Book Your Thumbnail → WhatsApp</a>
+</header>
+
+<section id="portfolio">
+    <h2>My Best Work</h2>
+    <div class="portfolio-grid">
+        <img src="thumbnail1.jpg" alt="Thumbnail 1" />
+        <img src="thumbnail2.jpg" alt="Thumbnail 2" />
+        <img src="thumbnail3.jpg" alt="Thumbnail 3" />
+        <img src="thumbnail4.jpg" alt="Thumbnail 4" />
+        <img src="thumbnail5.jpg" alt="Thumbnail 5" />
+        <img src="thumbnail6.jpg" alt="Thumbnail 6" />
+    </div>
+</section>
+
+<section id="beforeafter">
+    <h2>Before &amp; After Transformations</h2>
+    <div class="before-after">
+        <img src="before1.jpg" alt="Before 1" />
+        <img src="after1.jpg" alt="After 1" />
+    </div>
+    <div class="before-after">
+        <img src="before2.jpg" alt="Before 2" />
+        <img src="after2.jpg" alt="After 2" />
+    </div>
+</section>
+
+<section id="pricing">
+    <h2>Choose Your Plan</h2>
+    <table class="pricing-table">
+        <tr>
+            <th>Package</th>
+            <th>Price</th>
+            <th>Includes</th>
+            <th>Delivery</th>
+        </tr>
+        <tr>
+            <td>Starter</td>
+            <td>₹XXX</td>
+            <td>1 Thumbnail, JPG/PNG</td>
+            <td>24 hours</td>
+        </tr>
+        <tr class="pro-plan">
+            <td>Growth</td>
+            <td>₹XXX</td>
+            <td>5 Thumbnails/month</td>
+            <td>24–48 hours</td>
+        </tr>
+        <tr>
+            <td>Pro</td>
+            <td>₹XXX</td>
+            <td>Unlimited Revisions</td>
+            <td>24–48 hours</td>
+        </tr>
+    </table>
+</section>
+
+<section id="testimonials">
+    <h2>What Clients Say</h2>
+    <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        "CTR jumped from 4% to 8% in just 2 videos — amazing work!"
+    </div>
+    <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        "Finally thumbnails that match my content’s energy!"
+    </div>
+</section>
+
+<footer id="contact">
+    <h2>Ready to Boost Your Views?</h2>
+    <a class="cta-btn" href="https://wa.me/YourNumberHere?text=Hello&amp;I%20want%20a%20thumbnail">Book Your Thumbnail → WhatsApp</a>
+    <p>&#169; [Your Name] 2025</p>
+</footer>
+
+<script>
+// Scroll animations
+const sections = document.querySelectorAll('section');
+const testimonials = document.querySelectorAll('.testimonial');
+window.addEventListener('scroll', () => {
+    let triggerBottom = window.innerHeight / 1.1;
+    sections.forEach(section => {
+        const top = section.getBoundingClientRect().top;
+        if(top < triggerBottom) section.classList.add('visible');
+    });
+    testimonials.forEach(testimonial => {
+        const top = testimonial.getBoundingClientRect().top;
+        if(top < triggerBottom) testimonial.classList.add('visible');
+    });
+});
+</script>
+
+</body>
+</html>
